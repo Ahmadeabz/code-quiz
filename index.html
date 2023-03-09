@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="c:\Users\Ahmad\Desktop\code-quiz\stylesheet.css">
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="highscores.html"><button class="scores-header" id="view-high-scores">View High Scores</button></a>
+            </div>
+        
+            <div class="timer">
+                <p>Time: 
+                    <span id="timer">0</span>
+                </p>
+            </div>
+        </header>
+        
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" id="start-screen">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>Welcome to the coding quiz challenge. When you select the start button the timer will begin to countdown and you will be presented with a number of questions. You have a limited time frame to answer each question before the next question will appear. If you answer incorrectly, 15 seconds will be deducted from the timer. The quiz will end when all questions are answered or the timer reaches zero. Save your initials at the end to track your progress. Good luck and enjoy!</p>
+                    <button id="start">Start Quiz</button>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options"></div>
+            </div>
+
+            <div class="hide" id="quiz-end">
+                <h2>Congratulations on completing the quiz!</h2>
+                <p>Your final score is: <span id="score-final"></span></p>
+                <p>Enter your initials here to log your score: <input type="text" id="name" max="3" />
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback" class="feedback hide"></div>
+        </main>
+        <script src="c:\Users\Ahmad\Desktop\code-quiz\script.js"></script>
+    </body>
+</html>
